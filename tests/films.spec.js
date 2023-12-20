@@ -293,6 +293,16 @@ describe('Function "orderByYear"', () => {
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 
+describe('Function "moviesAverageByCategory"', () => {
+  it('should be declared', () => {
+    expect(typeof moviesAverageByCategory).toBe('function');
+  });
+
+  it('should return an array', () => {
+    expect(moviesAverageByCategory(movies) instanceof Array).toBe(true);
+  });
+});
+
 
 // Exercise 7
 describe('Function "hoursToMinutes"', () => {
